@@ -1,0 +1,880 @@
+vadim@vadim-VirtualBox:~$ cat > Домашние_животные
+
+кошка
+
+собака
+
+хомяк
+
+^C     
+
+vadim@vadim-VirtualBox:~$ cat > Вьючные_животные
+
+лошадь
+
+верблюд
+
+осел
+
+^C
+
+vadim@vadim-VirtualBox:~$ ls
+
+ app                  snap                                 Загрузки
+
+ compose-demo         test                                 Изображения
+
+ docker-compose.yml   ubuntu-20.04.2.0-desktop-amd64.iso   Музыка
+
+ Dockerfile           Видео                                Общедоступные
+
+ myfolder             Вьючные_животные                    'Рабочий стол'
+
+ ourdb                Документы                            Шаблоны
+
+ shared               Домашние_животные
+
+vadim@vadim-VirtualBox:~$ cat Домашние_животные  Вьючные_животные >  Животные
+
+vadim@vadim-VirtualBox:~$ ls
+
+ app                  snap                                 Животные
+
+ compose-demo         test                                 Загрузки
+
+ docker-compose.yml   ubuntu-20.04.2.0-desktop-amd64.iso   Изображения
+
+ Dockerfile           Видео                                Музыка
+
+ myfolder             Вьючные_животные                     Общедоступные
+
+ ourdb                Документы                           'Рабочий стол'
+
+ shared               Домашние_животные                    Шаблоны
+
+vadim@vadim-VirtualBox:~$ mv Животные Друзья человека
+
+mv: указанная цель 'человека' не является каталогом
+
+vadim@vadim-VirtualBox:~$ mv Животные > Друзья человека
+
+vadim@vadim-VirtualBox:~$ cat Друзья человека 
+
+кошка
+
+собака
+
+хомяк
+
+лошадь
+
+верблюд
+
+осел
+
+vadim@vadim-VirtualBox:~$ mkdir Питомник
+
+vadim@vadim-VirtualBox:~$ mv Друзья человека /home/Питомник
+
+mv: указанная цель '/home/Питомник' не является каталогом
+
+vadim@vadim-VirtualBox:~$ mv Друзья человека ~/home/Питомник
+
+mv: указанная цель '/home/vadim/home/Питомник' не является каталогом
+
+vadim@vadim-VirtualBox:~$ mv Друзья человека ~/Питомник/
+
+vadim@vadim-VirtualBox:~$ ls
+
+ app                  snap                                 Загрузки
+
+ compose-demo         test                                 Изображения
+
+ docker-compose.yml   ubuntu-20.04.2.0-desktop-amd64.iso   Музыка
+
+ Dockerfile           Видео                                Общедоступные
+
+ myfolder             Вьючные_животные                     Питомник
+
+ ourdb                Документы                           'Рабочий стол'
+
+ shared               Домашние_животные                    Шаблоны
+
+vadim@vadim-VirtualBox:~$ ls -l
+
+итого 80
+
+drwxr-xr-x 2 root    root   4096 июл 17 19:37  app
+
+drwxrwxr-x 3 vadim   vadim  4096 июл 17 15:28  compose-demo
+
+-rw-r--r-- 1 root    root    317 июл 17 19:41  docker-compose.yml
+
+-rw-r--r-- 1 root    root     40 июл 17 14:58  Dockerfile
+
+drwxr-xr-x 2 root    root   4096 июл 17 19:42  myfolder
+
+drwxrwxr-x 6 vboxadd vboxsf 4096 июл 17 15:44  ourdb
+
+drwxrwx--- 1 root    vboxsf    0 апр  3 12:30  shared
+
+drwx------ 4 vadim   vadim  4096 июл 17 15:38  snap
+
+drwxr-xr-x 2 root    root   4096 июл 17 14:46  test
+
+-rw-rw-r-- 1 vadim   vadim   282 июл 17 15:21  ubuntu-20.04.2.0-desktop-amd64.iso
+
+drwxr-xr-x 2 vadim   vadim  4096 апр  1 22:18  Видео
+
+-rw-rw-r-- 1 vadim   vadim    37 июл 24 20:25  Вьючные_животные
+
+drwxr-xr-x 2 vadim   vadim  4096 апр  1 22:18  Документы
+
+-rw-rw-r-- 1 vadim   vadim    35 июл 24 20:23  Домашние_животные
+
+drwxr-xr-x 2 vadim   vadim  4096 апр  1 22:18  Загрузки
+
+drwxr-xr-x 2 vadim   vadim  4096 апр  1 22:18  Изображения
+
+drwxr-xr-x 2 vadim   vadim  4096 апр  1 22:18  Музыка
+
+drwxr-xr-x 2 vadim   vadim  4096 апр  1 22:18  Общедоступные
+
+drwxrwxr-x 2 vadim   vadim  4096 июл 24 20:34  Питомник
+
+drwxr-xr-x 2 vadim   vadim  4096 июл 17 20:58 'Рабочий стол'
+
+drwxr-xr-x 2 vadim   vadim  4096 апр  1 22:18  Шаблоны
+
+vadim@vadim-VirtualBox:~$ cd Питомник/
+
+vadim@vadim-VirtualBox:~/Питомник$ ды -д
+
+ды: команда не найдена
+
+vadim@vadim-VirtualBox:~/Питомник$ ls -l
+
+итого 4
+
+-rw-rw-r-- 1 vadim vadim  0 июл 24 20:29 Друзья
+
+-rw-rw-r-- 1 vadim vadim 72 июл 24 20:27 человека
+
+vadim@vadim-VirtualBox:~/Питомник$ ls
+
+Друзья  человека
+
+vadim@vadim-VirtualBox:~/Питомник$ cd ..
+
+vadim@vadim-VirtualBox:~$ 
+
+vadim@vadim-VirtualBox:~$ 
+
+vadim@vadim-VirtualBox:~$ history 
+
+    1  exit
+
+    2  sudo apt update
+
+    3  sudo install mc
+
+    4  sudo apt install mc
+
+    5  cls
+
+    6  clear
+
+    7  sudo apt install openss
+
+    8  sudo apt install openssh-server
+
+    9  systemctl status ssh
+
+   10  hostname -I
+
+   11  clear
+
+   12  sudo apt update
+
+   13  sudo apt install gcc make perl
+
+   14  sudo apt update
+
+   15  sudo apt install gcc make perl
+
+   16  exit
+
+   17  sudo reboot
+
+   18  sudo apt update
+
+   19  sudo apt install gcc make perl
+
+   20  sudo apt update
+
+   21  sudo apt-get install gcc perl make
+
+   22  sudo reboot
+
+   23  sudo apt update
+
+   24  sudo apt install gcc make perl
+
+   25  sudo reboot
+
+   26  sudo apt update
+
+   27  apt list --upgradable
+
+   28  sudo apt-get install virtualbox-guest-utils
+
+   29  sudo apt-get install virtualbox-guest-x11
+
+   30  sudo apt-get install virtualbox-guest-utils
+
+   31  sudo apt update
+
+   32  sudo apt upgrade
+
+   33  sudo apt update
+
+   34  apt list --upgradable
+
+   35  sudo apt full-upgrade
+
+   36  sudo apt dist-upgrade
+
+   37  sudo apt install-f
+
+   38  sudo apt install -f
+
+   39  sudo apt update --fix-missing
+
+   40  sudo apt install gcc make perl
+
+   41  sudo reboot
+
+   42  sudo apt update
+
+   43  apt list --upgradable
+
+   44  clear
+
+   45  sudo usermod -aGvboxsF vadim
+
+   46  sudo usermod -aG vboxsF vadim
+
+   47  sudo apt-get install virtualbox-guest-utils
+
+   48  sudo virtualbox-guest-dkms
+
+   49  virtualbox-guest-dkms
+
+   50  sudo apt update
+
+   51  sudo apt install gcc make perl
+
+   52  sudo reboot
+
+   53  sudo apt update
+
+   54  sudo apt upgrade
+
+   55  sudo apt update
+
+   56  passwd
+
+   57  q
+
+   58  sudo passwd
+
+   59  sudo apt update
+
+   60  clear
+
+   61  sudo ./VBoxLinuxAdditions.run
+
+   62  sudo apt update
+
+   63  sudo passwd vadim
+
+   64  sudo apt update
+
+   65  sudo apt upgrade
+
+   66  apt list --upgradable
+
+   67  apt --help
+
+   68  sudo apt install gdm3/jammy-updates 42.0-1ubuntu7.22.04.1 amd64
+
+   69  sudo apt apdate
+
+   70  sudo apt update
+
+   71  sudo apt upgrade
+
+   72  sudo apt update
+
+   73  exit
+
+   74  hostname -I
+
+   75  sudo reboot
+
+   76  ls -l
+
+   77  sudo nano docker-compose.yml
+
+   78  ls-l
+
+   79  sudo ls -l
+
+   80  docker compose up
+
+   81  sudo apt update
+
+   82  sudo apt install docker -y
+
+   83  sudo apt-get install apt-transport-https ca_certificates curl
+
+   84  docker --help
+
+   85  sudo apt  install docker.io
+
+   86  sudo apt install docker.io
+
+   87  docker compose up
+
+   88  docker --help
+
+   89  docker-compose up
+
+   90  sudo apt install docker-compose
+
+   91  docker-compose up
+
+   92  sudo nano Dockerfile.txt
+
+   93  mkdir ourdb
+
+   94  ls -l
+
+   95  sudo docker run --name test-mariadb-gb-1 -e MARIADB_ROOT_PASSWORD=test123 -v /ourdb:/var/www/gb/docker/3/ourdb:/var/lib/mysql -d mariadb:10.10.2
+
+   96  sudo docker run --name test-mariadb-gb-1 -e MARIADB_ROOT_PASSWORD=test123 -v ./ourdb:/var/lib/mysql -d mariadb:10.10.2
+
+   97  sudo docker run --name test-mariadb-gb-1 -e MARIADB_ROOT_PASSWORD=test123 -v ~/ourdb:/var/lib/mysql -d mariadb:10.10.2
+
+   98  docker ps
+
+   99  sudo docker ps
+
+  100  sudo docker exec -it bcf9e21e9481 bash 
+
+  101  sudo docker run --name my-phpmyadmin-gb-1
+
+  102  sudo docker run --name my-phpmyadmin-gb-1 -d --link
+
+  103  sudo docker run --name my-phpmyadmin-gb-1 -d --link test-mariadb-gb-1:db -p 8081:80 phpmyadmin/phpmyadmin
+
+  104  sudo docker ps
+
+  105  mc
+
+  106  cd /mysql
+
+  107  ls -l
+
+  108  cd ourdb/
+
+  109  ls -l
+
+  110  cd mysql/
+
+  111  sudo cd mysql/
+
+  112  cd ..
+
+  113  nano Dockerfile.txt 
+
+  114  sudo nano Dockerfile.txt 
+
+  115  cat Dockerfile.txt 
+
+  116  sudo docker build -t mymaria-3
+
+  117  sudo docker run --name test-mariadb-my-1 -e MARIADB_ROOT_PASSWORD=test123 -d mymaria-3
+
+  118  sudo nano Dockerfile.txt 
+
+  119  sudo docker build -t mymaria-3
+
+  120  sudo nano Dockerfile.txt 
+
+  121  sudo docker build -t mymaria-3
+
+  122  sudo docker run --name test-mariadb-my-1 -e MARIADB_ROOT_PASSWORD=test123 -d mymaria-3
+
+  123  sudo nano docker-compose.yml 
+
+  124  sudo nano Dockerfile.txt 
+
+  125  ls -l
+
+  126  sudo docker-compose up
+
+  127  sudo docker compose up
+
+  128  sudo docker-compose up
+
+  129  cat docker-compose.yml 
+
+  130  docker-compose --version
+
+  131  sudo nano docker-compose.yml 
+
+  132  sudo docker-compose up
+
+  133  sudo nano docker-compose.yml 
+
+  134  sudo docker-compose up
+
+  135  sudo docker ps
+
+  136  ls -l
+
+  137  docker compose up
+
+  138  docker-compose up
+
+  139  sudo nano docker-compose.yml 
+
+  140  mkdir /test
+
+  141  sudo mkdir /test
+
+  142  docker-compose up
+
+  143  sudo docker-compose up
+
+  144  sudo nano Dockerfile.txt 
+
+  145  sudo docker-compose up
+
+  146  ls -l
+
+  147  sudo nano Dockerfile.txt 
+
+  148  sudo docker-compose up
+
+  149  sudo nano Dockerfile.txt 
+
+  150  ls -l
+
+  151  sudo mkdir ~/test
+
+  152  ls -l
+
+  153  sudo docker-compose up
+
+  154  sudo nano docker-compose.yml 
+
+  155  sudo docker-compose up
+
+  156  cat Dockerfile.txt 
+
+  157  cat docker-compose.yml 
+
+  158  sudo nano Dockerfile.txt 
+
+  159  sudo nano docker-compose.yml 
+
+  160  sudo docker-compose up
+
+  161  sudo nano Dockerfile.txt 
+
+  162  sudo nano docker-compose.yml 
+
+  163  sudo docker-compose up
+
+  164  sudo docker-compose up --remove-orphans
+
+  165  ls -l
+
+  166  sudo rm Dockerfile.txt 
+
+  167  ls -l
+
+  168  sudo docker-compose up --remove-orphans
+
+  169  sudo docker-compose up
+
+  170  sudo docker build -t mariadb .
+
+  171  sudo docker ps
+
+  172  ls -l
+
+  173  ls -l
+
+  174  cd ..
+
+  175  sudo docker-compose up
+
+  176  find / -type d -name 'mariadb'
+
+  177  sudo find / -type d -name 'mariadb'
+
+  178  sudo su
+
+  179  docker compose up
+
+  180  sudo docker ps
+
+  181  nano docker-compose.yml 
+
+  182  docker-compose --verison
+
+  183  docker-compose verison
+
+  184  docker-compose -verison
+
+  185  docker-compose --version
+
+  186  sudo curl -L "https://github.com/docker/compose/releases/download/1.26.0/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose
+
+  187  sudo apt update 
+
+  188  sudo apt istall curl
+
+  189  sudo apt install curl
+
+  190  curl -V
+
+  191  curl -OC - https://releases.ubuntu.com/20.04.2.0/ubuntu-20.04.2.0-desktop-amd64.iso
+
+  192  sudo curl -L "https://github.com/docker/compose/releases/download/1.26.0/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose
+
+  193  sudo docker-compose up
+
+  194  sudo chmod +x /usr/local/bin/docker-compose
+
+  195  docker-compose --version
+
+  196  mkdir ~/compose-demo
+
+  197  cd ~/compose-demo
+
+  198  mkdir app
+
+  199  nano app/index.html
+
+  200  nano docker-compose.yml
+
+  201  docker-compose up -d
+
+  202  nano docker-compose.yml
+
+  203  docker-compose up -d
+
+  204  nano docker-compose.yml
+
+  205  docker-compose up -d
+
+  206  cd ..
+
+  207  sudo apt update 
+
+  208  sudo apt install nginx
+
+  209  cd /var/www
+
+  210  sudo mkdir tutorial
+
+  211  cd tutorial/
+
+  212  sudo "${EDITOR:-vi}" index.html
+
+  213  cd ..
+
+  214  cd /etc/nginx/sites-enabled
+
+  215  sudo "${EDITOR:-vi}" tutoria
+
+  216  cd ..
+
+  217  cd ~/
+
+  218  sudo server nginx restart
+
+  219  sudo service nginx restart
+
+  220  sudo docker-compose up
+
+  221  sudo docker-compose up -d
+
+  222  docker compose up -d
+
+  223  docker-compose up -d 
+
+  224  docker-compose --version
+
+  225  docker-compose ps
+
+  226  sudo apt update
+
+  227  sudo apt install curl software-properties-common ca-certificates apt-transport-https -y
+
+  228  curl -f -s -S -L https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -
+
+  229  sudo add-apt-repository "deb [arch=amd64] https://download.docker.com/linux/ubuntu jammy stable"
+
+  230  sudo apt update
+
+  231  apt-cache policy docker-ce
+
+  232  sudo apt install docker-ce -y
+
+  233  sudo systemctl status docker
+
+  234  sudo docker ps
+
+  235  docker compose stop
+
+  236  sudo docker compose stop
+
+  237  sudo docker ps
+
+  238  sudo docker ps -a
+
+  239  sudo docker-compose up
+
+  240  sudo nano docker-compose.yml 
+
+  241  sudo docker-compose --version
+
+  242  sudo nano docker-compose.yml 
+
+  243  sudo docker-compose up
+
+  244  docker-compose up -d
+
+  245  sudo nano docker-compose.yml 
+
+  246  docker-compose up -d
+
+  247  sudo nano docker-compose.yml 
+
+  248  docker-compose up -d
+
+  249  ls -l
+
+  250  sudo autoremove
+
+  251  sudo apt install ncdu
+
+  252  docker-compose up -d
+
+  253  ncdu /
+
+  254  sudo apt install fslint
+
+  255  sudo apt autoclean
+
+  256  sudo apt clean
+
+  257  sudo apt autoremove
+
+  258  docker-compose up -d
+
+  259  sudo snap set system reflesh.retain=2 
+
+  260  sudo nano docker-compose.yml 
+
+  261  apt-get clean
+
+  262  sudo apt-get clean
+
+  263  sudo apt install deborphan
+
+  264  deborphan 
+
+  265  sudo apt remove $(deborphan)
+
+  266  sudo apt install bleachbit
+
+  267  sudo bleachbit
+
+  268  sudo apt install stacer
+
+  269  docker compose up 
+
+  270  sudo docker compose up 
+
+  271  sudo nano docker-compose.yml 
+
+  272  sudo docker compose up 
+
+  273  sudo docker compose down
+
+  274  cat > Домашние_животные
+
+  275  cat > Вьючные_животные
+
+  276  ls
+
+  277  cat Домашние_животные  Вьючные_животные >  Животные
+
+  278  ls
+
+  279  mv Животные Друзья человека
+
+  280  mv Животные > Друзья человека
+
+  281  cat Друзья человека 
+
+  282  mkdir Питомник
+
+  283  mv Друзья человека /home/Питомник
+
+  284  mv Друзья человека ~/home/Питомник
+
+  285  mv Друзья человека ~/Питомник/
+
+  286  ls
+
+  287  ls -l
+
+  288  cd Питомник/
+
+  289  ды -д
+
+  290  ls -l
+
+  291  ls
+
+  292  cd ..
+
+  293  history 
+
+vadim@vadim-VirtualBox:~$ sudo wget -c https://dev.mysql.com/get/mysql-apt-config_0.8.24-1_all.deb
+
+[sudo] пароль для vadim: 
+
+--2023-07-24 20:56:21--  https://dev.mysql.com/get/mysql-apt-config_0.8.24-1_all.deb
+
+Распознаётся dev.mysql.com (dev.mysql.com)… 23.59.130.206, 2a02:26f0:9500:b91::2e31, 2a02:26f0:9500:b80::2e31
+
+Подключение к dev.mysql.com (dev.mysql.com)|23.59.130.206|:443... соединение установлено.
+
+HTTP-запрос отправлен. Ожидание ответа… 302 Moved Temporarily
+
+Адрес: https://repo.mysql.com//mysql-apt-config_0.8.24-1_all.deb [переход]
+
+--2023-07-24 20:56:21--  https://repo.mysql.com//mysql-apt-config_0.8.24-1_all.deb
+
+Распознаётся repo.mysql.com (repo.mysql.com)… 23.40.200.250
+
+Подключение к repo.mysql.com (repo.mysql.com)|23.40.200.250|:443... соединение установлено.
+
+HTTP-запрос отправлен. Ожидание ответа… 200 OK
+
+Длина: 18048 (18K) [application/x-debian-package]
+
+Сохранение в: ‘mysql-apt-config_0.8.24-1_all.deb’
+
+
+
+mysql-apt-config_0.8.24-1 100%[==================================>]  17,62K  --.-KB/s    за 0,003s  
+
+
+
+2023-07-24 20:56:21 (6,16 MB/s) - ‘mysql-apt-config_0.8.24-1_all.deb’ сохранён [18048/18048]
+
+
+
+vadim@vadim-VirtualBox:~$ sudo dpkg -i mysql-apt-config_0.8.24-1_all.deb
+
+Выбор ранее не выбранного пакета mysql-apt-config.
+
+(Чтение базы данных … на данный момент установлено 188037 файлов и каталогов.)
+
+Подготовка к распаковке mysql-apt-config_0.8.24-1_all.deb …
+
+Распаковывается mysql-apt-config (0.8.24-1) …
+
+Настраивается пакет mysql-apt-config (0.8.24-1) …
+
+Warning: apt-key should not be used in scripts (called from postinst maintainerscript of the package mysql-apt-config)
+
+Warning: apt-key is deprecated. Manage keyring files in trusted.gpg.d instead (see apt-key(8)).
+
+OK
+
+vadim@vadim-VirtualBox:~$ 
+
+vadim@vadim-VirtualBox:~$ sudo dpkg -r mysql-server-8.0
+
+dpkg: предупреждение: игнорируется запрос на удаление неустановленного пакета mysql-server-8.0
+
+vadim@vadim-VirtualBox:~$ sudo dpkg -r mysql-apt-config
+
+(Чтение базы данных … на данный момент установлено 188042 файла и каталога.)
+
+Удаляется mysql-apt-config (0.8.24-1) …
+
+vadim@vadim-VirtualBox:~$ history 25
+
+  274  cat > Домашние_животные
+
+  275  cat > Вьючные_животные
+
+  276  ls
+
+  277  cat Домашние_животные  Вьючные_животные >  Животные
+
+  278  ls
+
+  279  mv Животные Друзья человека
+
+  280  mv Животные > Друзья человека
+
+  281  cat Друзья человека 
+
+  282  mkdir Питомник
+
+  283  mv Друзья человека /home/Питомник
+
+  284  mv Друзья человека ~/home/Питомник
+
+  285  mv Друзья человека ~/Питомник/
+
+  286  ls
+
+  287  ls -l
+
+  288  cd Питомник/
+
+  289  ды -д
+
+  290  ls -l
+
+  291  ls
+
+  292  cd ..
+
+  293  history 
+
+  294  sudo wget -c https://dev.mysql.com/get/mysql-apt-config_0.8.24-1_all.deb
+
+  295  sudo dpkg -i mysql-apt-config_0.8.24-1_all.deb
+
+  296  sudo dpkg -r mysql-server-8.0
+
+  297  sudo dpkg -r mysql-apt-config
+
+  298  history 25
+
+vadim@vadim-VirtualBox:~$ 
+
